@@ -14,35 +14,34 @@ An autonomous line follower robot designed for competitive robotics events. This
 - High-speed PID-based line tracking
 - Real-time sensor array processing
 - Sharp turn recovery algorithm
-- Differential drive motor control
 - Speed ramping and acceleration control
 - Lightweight chassis optimization
 - Noise-filtered sensor readings
-- Competition-oriented firmware optimization
+- Competition-oriented code optimization
   
 ## 🧠 Core Concepts Used
-- Embedded Systems
-- Arduino / ESP32 programming
-- Timer-based control loops
+- ESP32 programming
 - PWM motor control
 - Sensor interfacing
-- Control Systems
 - PID control
 - Error correction
 - Dynamic speed adjustment
-- Robotics
 - Sensor fusion
 - Autonomous navigation
+
   
 ## 🛠️ Hardware Used
 | Component | Description |
 |---|---|
-| Microcontroller | ESP32 |
+| Microcontroller (MCU) | ESP32 |
 | Sensors | Analog QTR-8RC Sensor |
+| Obstacle Sensor | IR Sensor |
 | Motor Driver | L298N |
-| Motors | N20 12V DC Geared Motors |
-| Battery | Li-ion |
+| Motors | N20 12V DC Gear Motors (300 RPM) |
+| Battery | Li-ion 7.4V (2S) |
+| Voltage Regulator (~5V) | LM2596 |
 | Chassis | Custom Lightweight Chassis |
+
 
 ## 🔌 Working Principle
   The sensor array continuously reads the line position and calculates an error value relative to the center of the robot.
@@ -51,6 +50,7 @@ An autonomous line follower robot designed for competitive robotics events. This
   - I → compensates accumulated error
   - D → predicts future error
   The controller dynamically adjusts motor speeds to keep the robot aligned with the track even at high speeds.
+
 
 ## 📈 PID Control
   The control equation:
