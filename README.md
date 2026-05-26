@@ -2,11 +2,15 @@
 
 An autonomous line follower robot designed for competitive robotics events. This project combines embedded systems, control theory, sensor processing, and mechanical optimization to achieve highly accurate and stable line tracking alongwith maze solving algorithms for maze travesal.
 
-## 🏆 Achievements 
-  🥇 Winner at BHU Line Follower Competition
-  ⚡ Optimized for high-speed track navigation
-  🎯 Tuned PID control for stable movement
-  🤖 Real-time sensor-based autonomous navigation
+## 🏆 Achievements
+
+🥇 Winner at BHU Line Follower Competition
+
+⚡ Optimized for high-speed track navigation
+
+🎯 Tuned PID control for stable movement
+
+🤖 Real-time sensor-based autonomous navigation
 
 ## ⚙️ Features
 - High-speed PID-based line tracking
