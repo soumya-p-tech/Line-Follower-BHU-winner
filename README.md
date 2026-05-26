@@ -34,12 +34,14 @@ An autonomous line follower robot designed for competitive robotics events. This
   
 ## 🛠️ Hardware Used
 | **Component** | **Description** |
-|Microcontroller|	ESP32|
-|Sensors |       Analog QTR-8RC sensor|
-|Motor Driver |    L298N|
-|Motors  |        N20 12V DC Geared Motors|
-|Battery |      	Li-ion|
-|Chassis |        	Custom Lightweight Chassis|
+| Component | Description |
+|---|---|
+| Microcontroller | ESP32 |
+| Sensors | Analog QTR-8RC Sensor |
+| Motor Driver | L298N |
+| Motors | N20 12V DC Geared Motors |
+| Battery | Li-ion |
+| Chassis | Custom Lightweight Chassis |
 
 ## 🔌 Working Principle
   The sensor array continuously reads the line position and calculates an error value relative to the center of the robot.
@@ -51,8 +53,17 @@ An autonomous line follower robot designed for competitive robotics events. This
 
 ## 📈 PID Control
   The control equation:
-  genui{"math_block_widget_always_prefetch_v2":{"content":"u(t)=K_p e(t)+K_i \int e(t)dt + K_d \frac{de(t)}{dt}"}}
-  Where:
+
+```math
+u(t)=K_p e(t)+K_i \int e(t)\,dt + K_d \frac{de(t)}{dt}
+```
+
+Where:
+
+- \(e(t)\) = line position error
+- \(K_p\) = proportional gain
+- \(K_i\) = integral gain
+- \(K_d\) = derivative gain
   e(t) = line position error
   Kp = proportional gain
   Ki = integral gain
