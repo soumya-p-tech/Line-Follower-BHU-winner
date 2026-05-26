@@ -33,7 +33,6 @@ An autonomous line follower robot designed for competitive robotics events. This
 - Autonomous navigation
   
 ## 🛠️ Hardware Used
-| **Component** | **Description** |
 | Component | Description |
 |---|---|
 | Microcontroller | ESP32 |
@@ -59,15 +58,10 @@ u(t)=K_p e(t)+K_i \int e(t)\,dt + K_d \frac{de(t)}{dt}
 ```
 
 Where:
-
-- \(e(t)\) = line position error
-- \(K_p\) = proportional gain
-- \(K_i\) = integral gain
-- \(K_d\) = derivative gain
-  e(t) = line position error
-  Kp = proportional gain
-  Ki = integral gain
-  Kd = derivative gain
+- `e(t)` = line position error
+- `Kp` = proportional gain
+- `Ki` = integral gain
+- `Kd` = derivative gain
 
 
 ## 🎯 Optimization Techniques Used
@@ -86,9 +80,10 @@ Where:
   - Noise filtering
 
 ## 🧪 Future Improvements
-Encoder-based closed-loop speed control
-Adaptive PID tuning
-Custom PCB revision
-Machine-learning-assisted path prediction
-ROS integration
-Edge AI enhancements
+- Faster motors and high speed sensors
+- Encoder-based closed-loop speed control
+- Adaptive PID tuning
+- Custom PCB revision
+- Machine-learning-assisted path prediction
+- ROS integration
+- Edge AI enhancements
