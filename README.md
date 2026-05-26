@@ -1,14 +1,12 @@
 # 🚀 Line Follower Robot — BHU Winner
 
-An autonomous line follower robot designed for competitive robotics events. This project combines embedded systems, control theory, sensor processing, and mechanical optimization to achieve highly accurate and stable line tracking alongwith maze solving algorithms for maze travesal.
+An autonomous line follower robot designed for competitive robotics events. This project combines embedded systems, control theory, sensor processing, and mechanical optimization to achieve highly accurate and stable line tracking.
 
 ## 🏆 Achievements
 
-🥇 Winner at BHU Line Follower Competition
+🥇 Winner at MazeX 2026 (Line Following + Maze solving Competition at Technex'26 - IIT BHU) 
 
-⚡ Optimized for high-speed track navigation
-
-🎯 Tuned PID control for stable movement
+⚡ Tuned PID control loop for stable movement
 
 🤖 Real-time sensor-based autonomous navigation
 
